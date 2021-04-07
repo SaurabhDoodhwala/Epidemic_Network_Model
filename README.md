@@ -1,6 +1,7 @@
 # Epidemic Network Model
 
 Authors :
+
 Sarah Bi
 
 Saurabh Parimal Doodhwala 
@@ -19,30 +20,47 @@ How to compile and run (in Linux):
 The following global variables are defined in network.h file:
 
 #define numAgents 10
+
 #define numIterations 100
+
 #define numNearestNeighbors 4
+
 #define pReplaceRandom 0
 
 The following global variables are defined in model.h file:
 
 #define pInfection 0.05
+
 #define pRecovery 0.1
+
 #define pDisconnect 0
 
 These values can be changed by the user. If any invalid value is added, then a message will be printed in the terminal, indicating that value was wrong and an appropriate value will be taken. Sample output is as follows for the above shown values:
 
 Vertex 0 is adjacent to:        1, 9, 2, 8, 
+
 Vertex 1 is adjacent to:        2, 0, 3, 9, 
+
 Vertex 2 is adjacent to:        3, 1, 4, 0, 
+
 Vertex 3 is adjacent to:        4, 2, 5, 1, 
+
 Vertex 4 is adjacent to:        5, 3, 6, 2, 
+
 Vertex 5 is adjacent to:        6, 4, 7, 3, 
+
 Vertex 6 is adjacent to:        7, 5, 8, 4, 
+
 Vertex 7 is adjacent to:        8, 6, 9, 5, 
+
 Vertex 8 is adjacent to:        9, 7, 0, 6, 
+
 Vertex 9 is adjacent to:        0, 8, 1, 7, 
+
 The maximum number of infected individuals in a single iteration: 5
+
 The iteration number at which the maximum number of infected individuals occurs: 23
+
 The sum of number of currently infected and recovered individuals after the last iteration: 8
 
 
